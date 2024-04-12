@@ -15,7 +15,7 @@ if (!defined('NV_ADMIN')) {
 
 $allow_func = [
     'main',
-    'onecat2s',
+    'config',
 ];
 
-$submenu['onecat2s'] = $lang_module['onecat2_manager'];
+$submenu['config'] = $lang_module['config_manager'];

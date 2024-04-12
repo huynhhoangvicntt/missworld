@@ -16,5 +16,5 @@ if (!defined('NV_MAINFILE')) {
 
 
 // Danh mục đa cấp. Ngoài site chỉ lấy status=1 admin lấy hết
-$sql = "SELECT * FROM " . NV_PREFIXLANG . "_" . $module_data . "_onecat2s " . (defined('NV_ADMIN') ? '' : ' WHERE status=1') . " ORDER BY weight ASC";
-$global_array_onecat2s = $nv_Cache->db($sql, 'id', $module_name);
+$sql = "SELECT * FROM " . NV_PREFIXLANG . "_" . $module_data . "_player " . (defined('NV_ADMIN') ? '' : ' WHERE status=1') . " ORDER BY weight ASC";
+$global_array_player = $nv_Cache->db($sql, 'id', $module_name);

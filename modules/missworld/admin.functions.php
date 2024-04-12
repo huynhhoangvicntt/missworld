@@ -13,6 +13,8 @@ if (!defined('NV_ADMIN') or !defined('NV_MAINFILE') or !defined('NV_IS_MODADMIN'
     exit('Stop!!!');
 }
 
+$allow_func = array(
+    'config',
+    'main',
+);
 define('NV_IS_FILE_ADMIN', true);
-
-require NV_ROOTDIR . '/modules/' . $module_file . '/global.functions.php';

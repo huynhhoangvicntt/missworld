@@ -45,3 +45,5 @@ PRIMARY KEY (id),
 UNIQUE KEY email (email),
 KEY userid (userid)
 ) ENGINE=InnoDB";
+
+$sql_create_module[] = 'INSERT INTO ' . NV_CONFIG_GLOBALTABLE . " (lang, module, config_name, config_value) VALUES ('" . $lang . "', '" . $module_name . "', 'per_page', '12')";

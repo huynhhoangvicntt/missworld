@@ -13,6 +13,9 @@ if (!defined('NV_IS_FILE_ADMIN')) {
     exit('Stop!!!');
 }
 
+$page_title = $lang_module['list_player'];
+
+$content = "Main";
 
 include NV_ROOTDIR . '/includes/header.php';
 echo nv_admin_theme($contents);
